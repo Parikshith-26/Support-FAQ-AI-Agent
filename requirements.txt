@@ -1,6 +1,9 @@
 streamlit==1.32.0
-groq==0.5.0
+groq==0.8.0
 python-dotenv
+httpx==0.28.1
+
+
 
 
 
