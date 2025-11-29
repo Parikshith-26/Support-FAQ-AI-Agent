@@ -3,6 +3,9 @@ import streamlit as st
 from groq import Groq
 from dotenv import load_dotenv
 import os
+import streamlit as st
+st.write("DEBUG KEY LOADED:", os.getenv("GROQ_API_KEY"))
+
 
 load_dotenv()
 
@@ -47,6 +50,7 @@ if user_question:
 
         except Exception as e:
             st.error(f"AI Error: {e}")
+
 
 
 
