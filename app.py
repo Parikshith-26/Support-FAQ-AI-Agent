@@ -1,5 +1,6 @@
 import json
 import streamlit as st
+import httpx
 from groq import Groq
 from dotenv import load_dotenv
 import os
@@ -50,6 +51,7 @@ if user_question:
 
         except Exception as e:
             st.error(f"AI Error: {e}")
+
 
 
 
